@@ -1,14 +1,26 @@
+/* ==========================
+GLOBAL
+============================*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* ==========================
+HEADER
+============================*/
+}
 header{
     background: #1f2937;
     /* height: 25vh; */
 }
+/* ==========================
+NAVBAR
+============================*/
 .nav{
     display: flex;
     justify-content: space-between;
 }
 .nav-links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .link{
     margin: 1rem 2rem;
@@ -23,9 +35,11 @@ a{
     color: #e5e7eb;
 }
 .logo{
-    font-size: 24px;
-    color: #f9faf8;
+    padding: 1.5rem 2rem;
 }
+/* ==========================
+HERO
+============================*/
 .hero{
     display: flex;
     justify-content: space-between;
@@ -49,4 +63,93 @@ padding: 0.375rem 0.75rem;
 color: #e5e7eb;
 text-transform: capitalize;
 font-weight: bold;
+}
+.hero-container, .hero-img{
+    padding: 100px 200px;
+}
+
+/* ==========================
+SERVICES
+============================*/
+.service-heading{
+text-transform: capitalize;
+text-align: center;
+font-size: 36px;
+font-weight: bolder;
+color: #1f2937;
+}
+.services-container img{
+    width: 450px;
+    height: 300px;
+}
+.services-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.services-container p{
+    max-width: 15rem
+    ;
+}
+/* ==========================
+QUOTE
+============================*/
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e7eb;
+}
+.quote p{
+    max-width: 900px;
+    color: #1f2937;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: lighter;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.quote h5{
+    align-self: flex-end;
+}
+/* ==========================
+CALL TO ACTION
+============================*/
+.call-to-action{
+    background: #3882f6;
+    width: 55vw;
+    margin: 3rem 0 3rem 35rem;
+    padding: 1rem;
+    padding-left: 5rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.call-to-action button{
+    background: #3882f6;
+    color: #e5e7eb;
+    border: 1px solid #e5e7eb;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding:  0 0.5rem ;
+    height: 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+.call-to-action h4, p{
+    color: #e5e7eb;
+}
+/* ==========================
+FOOTER
+============================*/
+.footer{
+    height: 10vh;
+    background: #1f2937;
+    color: #f9faf8;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
 }
